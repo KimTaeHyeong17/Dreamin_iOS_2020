@@ -56,6 +56,14 @@ class ViewController: UIViewController {
         mediaPickerController.prompt = "Select Audio"
         present(mediaPickerController, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func actionPresentBirthdayVC(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "MakeBirthdayCardVC") as? MakeBirthdayCardVC
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+    
     @objc func video(
         _ videoPath: String,
         didFinishSavingWithError error: Error?,
@@ -177,12 +185,10 @@ class ViewController: UIViewController {
             duration: CMTimeAdd(firstAsset.duration, secondAsset.duration))
         
         // 7
-        let firstInstruction = AVMutableVideoCompositionLayerInstruction(
-            assetTrack: firstTrack)
-        firstInstruction.setOpacity(0.0, at: firstAsset.duration)
-        let secondInstruction = AVMutableVideoCompositionLayerInstruction(
-            assetTrack: secondTrack)
         
+        let firstInstruction = VideoHelper.videoCompositionInstruction(firstTrack, asset: firstAsset)
+        firstInstruction.setOpacity(0.0, at: firstAsset.duration)
+        let secondInstruction = VideoHelper.videoCompositionInstruction(secondTrack, asset: secondAsset)
         // 8
         mainInstruction.layerInstructions = [firstInstruction, secondInstruction]
         let mainComposition = AVMutableVideoComposition()

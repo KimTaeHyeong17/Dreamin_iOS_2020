@@ -14,6 +14,8 @@
 		8345154524FBC5D6009615A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8345154424FBC5D6009615A6 /* Assets.xcassets */; };
 		8345154824FBC5D6009615A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8345154624FBC5D6009615A6 /* LaunchScreen.storyboard */; };
 		8345155224FC1401009615A6 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345155124FC1401009615A6 /* VideoHelper.swift */; };
+		83909BA724FEB26700799FF1 /* MakeBirthdayCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83909BA624FEB26700799FF1 /* MakeBirthdayCardVC.swift */; };
+		83909BA924FF9DF100799FF1 /* VideoPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83909BA824FF9DF100799FF1 /* VideoPlayerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		8345154724FBC5D6009615A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8345154924FBC5D6009615A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8345155124FC1401009615A6 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
+		83909BA624FEB26700799FF1 /* MakeBirthdayCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeBirthdayCardVC.swift; sourceTree = "<group>"; };
+		83909BA824FF9DF100799FF1 /* VideoPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,58 @@
 		8345153A24FBC5D4009615A6 /* AVFoundationPractice */ = {
 			isa = PBXGroup;
 			children = (
-				8345153B24FBC5D4009615A6 /* AppDelegate.swift */,
-				8345153D24FBC5D4009615A6 /* SceneDelegate.swift */,
-				8345153F24FBC5D4009615A6 /* ViewController.swift */,
-				8345154124FBC5D4009615A6 /* Main.storyboard */,
-				8345154424FBC5D6009615A6 /* Assets.xcassets */,
-				8345154624FBC5D6009615A6 /* LaunchScreen.storyboard */,
+				83909BAE24FF9E2900799FF1 /* utils */,
+				83909BAD24FF9E1F00799FF1 /* storyboard */,
+				83909BAC24FF9E1300799FF1 /* viewcontroller */,
+				83909BAB24FF9E0500799FF1 /* asset */,
+				83909BAA24FF9DF800799FF1 /* app */,
 				8345154924FBC5D6009615A6 /* Info.plist */,
-				8345155124FC1401009615A6 /* VideoHelper.swift */,
 			);
 			path = AVFoundationPractice;
+			sourceTree = "<group>";
+		};
+		83909BAA24FF9DF800799FF1 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				8345153B24FBC5D4009615A6 /* AppDelegate.swift */,
+				8345153D24FBC5D4009615A6 /* SceneDelegate.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		83909BAB24FF9E0500799FF1 /* asset */ = {
+			isa = PBXGroup;
+			children = (
+				8345154424FBC5D6009615A6 /* Assets.xcassets */,
+			);
+			path = asset;
+			sourceTree = "<group>";
+		};
+		83909BAC24FF9E1300799FF1 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				8345153F24FBC5D4009615A6 /* ViewController.swift */,
+				83909BA824FF9DF100799FF1 /* VideoPlayerVC.swift */,
+				83909BA624FEB26700799FF1 /* MakeBirthdayCardVC.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		83909BAD24FF9E1F00799FF1 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8345154124FBC5D4009615A6 /* Main.storyboard */,
+				8345154624FBC5D6009615A6 /* LaunchScreen.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		83909BAE24FF9E2900799FF1 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				8345155124FC1401009615A6 /* VideoHelper.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +190,9 @@
 				8345154024FBC5D4009615A6 /* ViewController.swift in Sources */,
 				8345153C24FBC5D4009615A6 /* AppDelegate.swift in Sources */,
 				8345153E24FBC5D4009615A6 /* SceneDelegate.swift in Sources */,
+				83909BA724FEB26700799FF1 /* MakeBirthdayCardVC.swift in Sources */,
 				8345155224FC1401009615A6 /* VideoHelper.swift in Sources */,
+				83909BA924FF9DF100799FF1 /* VideoPlayerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
